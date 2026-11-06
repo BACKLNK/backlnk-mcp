@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "backlnk": {
+      "url": "https://backlnk.com/mcp",
+      "headers": { "Authorization": "Bearer YOUR_KEY" }
+    }
+  }
+}

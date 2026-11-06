@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    { "type": "promptString", "id": "backlnk-api-key", "description": "Backlnk API key", "password": true }
+  ],
+  "servers": {
+    "backlnk": {
+      "type": "http",
+      "url": "https://backlnk.com/mcp",
+      "headers": { "Authorization": "Bearer ${input:backlnk-api-key}" }
+    }
+  }
+}
