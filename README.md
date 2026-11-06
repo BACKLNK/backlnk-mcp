@@ -22,8 +22,7 @@
 BACKLNK is a remote [Model Context Protocol](https://modelcontextprotocol.io) server. It gives Claude Code, Cursor,
 VS Code and other MCP clients the same evidence-based checks that run on [backlnk.com](https://backlnk.com): meta tags
 and social previews, page structure, structured data, AI crawler access in robots.txt, redirects and headers, sitemaps,
-indexability, hreflang, internal links, duplicate content, images, answer passages, intent focus, llms.txt and page
-speed.
+indexability, hreflang, internal links, duplicate content, images, llms.txt and page speed.
 
 Every finding comes with its evidence (the URL, the exact excerpt and where it was found) and a recommendation, most
 important first. Your agent fixes the code, and after you deploy, `verify_fixes` re-runs the same check and tells you
@@ -148,8 +147,6 @@ need action.
 | `entity-schema` | Schema & entities | One page; up to 15 sameAs destinations are checked for reachability. |
 | `ai-crawler-access` | AI crawler access | robots.txt of the host plus one page's meta robots and X-Robots-Tag. |
 | `redirects-headers` | Redirects & headers | The URL you enter plus its http:// and www / non-www variants. |
-| `answer-snippets` | Answer snippets | One page, main content only. |
-| `intent-focus` | Intent & focus | One page. |
 | `image-seo` | Image SEO | One page; up to 60 image files measured. |
 | `page-speed` | Page speed | One page, two lab runs (mobile and desktop). |
 | `indexability` | Indexability | Up to 50 URLs on one website, plus its robots.txt and sitemap. |
@@ -160,7 +157,9 @@ need action.
 | `llms-txt-generate` | llms.txt draft | Reads up to 25 of your pages. |
 | `llms-txt-validate` | llms.txt validation | Checks up to 60 listed links. |
 
-The live list is always at [`https://backlnk.com/api/v1/checks`](https://backlnk.com/api/v1/checks).
+The live list is always at [`https://backlnk.com/api/v1/checks`](https://backlnk.com/api/v1/checks). Two website checks that use a
+hosted language model (Answer snippets, Intent & focus) run only on [backlnk.com](https://backlnk.com/tools), not through
+the API or the MCP server.
 
 ## REST API
 
