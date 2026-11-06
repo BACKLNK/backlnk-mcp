@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://backlnk.com/developers"><img src="https://backlnk.com/icon.svg" width="72" height="72" alt="Backlnk"></a>
+  <a href="https://backlnk.com/developers"><img src="https://backlnk.com/icon.svg" width="72" height="72" alt="BACKLNK"></a>
 </p>
 
-<h1 align="center">Backlnk MCP server</h1>
+<h1 align="center">BACKLNK MCP server</h1>
 
 <p align="center">
   <strong>Free technical SEO, AEO, LLMO and GEO checks for AI agents: check a page, fix it, then verify the fix.<br>
@@ -19,7 +19,7 @@
 
 ---
 
-Backlnk is a remote [Model Context Protocol](https://modelcontextprotocol.io) server. It gives Claude Code, Cursor,
+BACKLNK is a remote [Model Context Protocol](https://modelcontextprotocol.io) server. It gives Claude Code, Cursor,
 VS Code and other MCP clients the same evidence-based checks that run on [backlnk.com](https://backlnk.com): meta tags
 and social previews, page structure, structured data, AI crawler access in robots.txt, redirects and headers, sitemaps,
 indexability, hreflang, internal links, duplicate content, images, answer passages, intent focus, llms.txt and page
@@ -79,7 +79,7 @@ Add to `.vscode/mcp.json`. VS Code asks for the key once and stores it securely,
 
 ```json
 {
-  "inputs": [{ "type": "promptString", "id": "backlnk-api-key", "description": "Backlnk API key", "password": true }],
+  "inputs": [{ "type": "promptString", "id": "backlnk-api-key", "description": "BACKLNK API key", "password": true }],
   "servers": {
     "backlnk": {
       "type": "http",
@@ -100,7 +100,7 @@ the key in the `Authorization` header (`Bearer bk_...`). Clients that can only f
 
 Ask your agent:
 
-> Use Backlnk to check https://example.com/pricing. Fix the issues it finds in this repository, most important first.
+> Use BACKLNK to check https://example.com/pricing. Fix the issues it finds in this repository, most important first.
 > When I've deployed, verify the fixes.
 
 The loop:
@@ -112,7 +112,7 @@ The loop:
    and compares: fixed, new, still open, not re-checked.
 
 A finding counts as fixed only when the re-check assessed the same rule and found no problem. If the re-check could not
-assess it, Backlnk says so instead of claiming a fix.
+assess it, BACKLNK says so instead of claiming a fix.
 
 ## Tools
 
@@ -122,7 +122,7 @@ assess it, Backlnk says so instead of claiming a fix.
 | `run_checks` | Runs checks on one public URL and waits up to about 40 seconds. Returns per check its state, summary, counts and the issues and warnings to fix, plus audit ids. Default set: `meta-tags`, `page-structure`, `ai-crawler-access`, `redirects-headers`, `entity-schema`. | yes |
 | `get_report` | The compact report of an earlier check. `detail: "actions"` (default) for issues and warnings, `"all"` for every finding. | yes |
 | `verify_fixes` | Re-runs the same check fresh on the same URL and options and returns the comparison with the original run. | yes |
-| `ai_crawler_policy` | Builds robots.txt lines that allow or block AI crawlers from Backlnk's reviewed crawler list, with what each line does and warnings. Presets: `block-training`, `block-ai`, `allow-all`, or decide per purpose and per crawler. | yes |
+| `ai_crawler_policy` | Builds robots.txt lines that allow or block AI crawlers from BACKLNK's reviewed crawler list, with what each line does and warnings. Presets: `block-training`, `block-ai`, `allow-all`, or decide per purpose and per crawler. | yes |
 | `usage` | How many checks the key has used and has left today and this hour. | yes |
 
 Listing the tools (`tools/list`) works without a key; calling them needs one.
@@ -196,14 +196,14 @@ Errors are JSON, `{ "error": { "code", "message" } }`, with the matching HTTP st
 
 ## Limits and fair use
 
-- 100 checks per key in any 24 hours; results Backlnk reuses from a very recent identical check are free.
+- 100 checks per key in any 24 hours; results BACKLNK reuses from a very recent identical check are free.
 - A fair-use hourly limit per key, and limits per website so no site is crawled too hard.
-- Backlnk only checks public pages. Private, local and internal addresses are refused.
+- BACKLNK only checks public pages. Private, local and internal addresses are refused.
 - `GET /api/v1/usage` and the `usage` tool show what is left.
 
 ## Privacy
 
-Backlnk keeps your e-mail address with your key and deletes it if you ask
+BACKLNK keeps your e-mail address with your key and deletes it if you ask
 ([contact](https://backlnk.com/contact)). Reports are private to the key that ran them and are never published or
 indexed.
 
@@ -214,5 +214,5 @@ Questions, bugs or ideas: [open an issue](https://github.com/BACKLNK/backlnk-mcp
 
 ## License
 
-The documentation and examples in this repository are available under the [MIT License](LICENSE). The Backlnk service
+The documentation and examples in this repository are available under the [MIT License](LICENSE). The BACKLNK service
 is free to use within its limits.

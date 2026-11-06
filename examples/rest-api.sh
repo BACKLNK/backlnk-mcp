@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Check a page, wait for the result, and (after fixing and deploying) verify the fix with the Backlnk REST API.
+# Check a page, wait for the result, and (after fixing and deploying) verify the fix with the BACKLNK REST API.
 # Usage: BACKLNK_API_KEY=bk_... ./rest-api.sh https://example.com/
 # Needs curl and jq.
 set -euo pipefail

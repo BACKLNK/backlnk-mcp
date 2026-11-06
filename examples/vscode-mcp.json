@@ -1,6 +1,6 @@
 {
   "inputs": [
-    { "type": "promptString", "id": "backlnk-api-key", "description": "Backlnk API key", "password": true }
+    { "type": "promptString", "id": "backlnk-api-key", "description": "BACKLNK API key", "password": true }
   ],
   "servers": {
     "backlnk": {
