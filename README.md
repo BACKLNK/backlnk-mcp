@@ -5,7 +5,8 @@
 <h1 align="center">Backlnk MCP server</h1>
 
 <p align="center">
-  <strong>Free technical SEO and AI-visibility checks for AI agents: check a page, fix it, verify the fix.</strong>
+  <strong>Free technical SEO, AEO, LLMO and GEO checks for AI agents: check a page, fix it, then verify the fix.<br>
+  Evidence for every finding, most important first. Remote MCP server, free API key.</strong>
 </p>
 
 <p align="center">
